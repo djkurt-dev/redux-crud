@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+    text-align: center;
+    /* align-items: center; */
+    justify-items: center;
+    padding-top: 30px;
+    min-height: 100vh;
+    background-color: #282c34;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #282c34;
+    background-color: beige;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(245, 249, 195, 0.2);
+}
+
+/* Add some padding inside the card container */
+/* .container {
+} */
+
+h1 {
+    color: beige;
+}
+.name {
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.contact {
+    font-size: 15px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.addcontact {
+    margin-bottom: 20px;
+    flex-direction: column;
 }
